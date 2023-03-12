@@ -1,0 +1,117 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+      "assets/*": [
+        "assets/*"
+      ],
+      "components": [
+        "components/index"
+      ],
+      "features": [
+        "features/index"
+      ],
+      "screens": [
+        "screens/index"
+      ],
+      "util": [
+        "util/index"
+      ],
+      "api": [
+        "shared/api/index"
+      ],
+      "constants": [
+        "shared/constants/index"
+      ],
+      "helpers": [
+        "shared/helpers/index"
+      ],
+      "hooks": [
+        "shared/hooks/index"
+      ],
+      "navigation": [
+        "shared/navigation/index"
+      ],
+      "services": [
+        "shared/services/index"
+      ],
+      "stores": [
+        "shared/stores/index"
+      ],
+      "themes": [
+        "shared/themes/index"
+      ],
+      "translations": [
+        "shared/translations/index"
+      ],
+      "ui": [
+        "shared/ui/index"
+      ],
+      "components/*": [
+        "components/*"
+      ],
+      "features/*": [
+        "features/*"
+      ],
+      "screens/*": [
+        "screens/*"
+      ],
+      "util/*": [
+        "util/*"
+      ],
+      "api/*": [
+        "shared/api/*"
+      ],
+      "constants/*": [
+        "shared/constants/*"
+      ],
+      "helpers/*": [
+        "shared/helpers/*"
+      ],
+      "hooks/*": [
+        "shared/hooks/*"
+      ],
+      "navigation/*": [
+        "shared/navigation/*"
+      ],
+      "services/*": [
+        "shared/services/*"
+      ],
+      "stores/*": [
+        "shared/stores/*"
+      ],
+      "themes/*": [
+        "shared/themes/*"
+      ],
+      "translations/*": [
+        "shared/translations/*"
+      ],
+      "ui/*": [
+        "shared/ui/*"
+      ]
+    },
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": [
+      "es2018"
+    ],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "importHelpers": true
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
+}
