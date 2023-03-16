@@ -5,6 +5,9 @@ import {
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Button, Input } from 'ui';
+import { LocalizationService } from 'services';
+
+LocalizationService.initLocalization();
 
 const styles = StyleSheet.create({
   layout: {
