@@ -19,6 +19,7 @@ module.exports = {
           { themes: './src/shared/themes' },
           { translations: './src/shared/translations' },
           { ui: './src/shared/ui' },
+          { assets: './src/assets' },
         ],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
