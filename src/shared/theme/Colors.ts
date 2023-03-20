@@ -48,6 +48,17 @@ export const Colors = {
   danger800: '#9f1239',
   danger900: '#881337',
 
+  error50: '#fef2f2',
+  error100: '#fee2e2',
+  error200: '#fecaca',
+  error300: '#fca5a5',
+  error400: '#f87171',
+  error500: '#ef4444',
+  error600: '#dc2626',
+  error700: '#b91c1c',
+  error800: '#991b1b',
+  error900: '#7f1d1d',
+
   success50: '#f0fdf4',
   success100: '#dcfce7',
   success200: '#bbf7d0',

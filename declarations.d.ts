@@ -1,8 +1,7 @@
 declare module '*.svg' {
     import React from 'react';
-    import { SvgProps } from 'react-native-svg';
+    import type { SvgIconProps } from 'helpers/Helpers';
 
-    const content: React.FC<SvgProps & {fillSecondary?:string; fillTertiary?:string;
-      fillPrimary?:string}>;
+    const content: React.FC<SvgIconProps>;
     export default content;
   }

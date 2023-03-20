@@ -1,25 +1,31 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { Button, Input } from 'ui';
+import { Input } from 'ui';
 import { LocalizationService } from 'services';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 LocalizationService.initLocalization();
 
-const App = () => (
-  <GestureHandlerRootView style={{ flex: 1 }}>
-    <SafeAreaProvider>
-      <View style={{
-        display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 100,
-      }}
-      >
-        <Text>Mongoloid</Text>
-        <Button title="Mongoloid" />
-        <Input />
-      </View>
-    </SafeAreaProvider>
-  </GestureHandlerRootView>
-);
+const App = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [text, setText] = useState('');
+
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SafeAreaProvider>
+        <View style={{
+          alignItems: 'center', justifyContent: 'center', padding: 30,
+        }}
+        >
+          <Input type="email" label="Email" value={email} onChangeText={setEmail} />
+          <Input type="password" label="Password" value={password} onChangeText={setPassword} error="Pizdec" />
+          <Input label="Name" value={text} onChangeText={setText} />
+        </View>
+      </SafeAreaProvider>
+    </GestureHandlerRootView>
+  );
+};
 
 export default App;
