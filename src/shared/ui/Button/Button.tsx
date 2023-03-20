@@ -19,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({
     {...touchableConfig}
     onPress={onPress}
     disabled={isLoading || disabled}
-    style={styles.button}
+    style={[styles.button, (disabled || isLoading) && { opacity: 0.8 }]}
   >
     {isLoading ? <Loader /> : (
       <Text style={styles.text}>{title}</Text>
@@ -32,13 +32,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
-    height: 46,
-    backgroundColor: Colors.primary500,
+    height: 48,
+    backgroundColor: Colors.lightBlue500,
     borderRadius: 8,
   },
   text: {
     color: Colors.white,
-    fontSize: FontSizes.md,
+    fontSize: FontSizes.xl,
     fontWeight: '700',
   },
 });

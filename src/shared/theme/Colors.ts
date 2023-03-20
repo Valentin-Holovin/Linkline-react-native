@@ -81,6 +81,17 @@ export const Colors = {
   info800: '#075985',
   info900: '#0c4a6e',
 
+  lightBlue50: '#f0f9ff',
+  lightBlue100: '#e0f2fe',
+  lightBlue200: '#bae6fd',
+  lightBlue300: '#7dd3fc',
+  lightBlue400: '#38bdf8',
+  lightBlue500: '#0ea5e9',
+  lightBlue600: '#0284c7',
+  lightBlue700: '#0369a1',
+  lightBlue800: '#075985',
+  lightBlue900: '#0c4a6e',
+
   gray50: '#fafafa',
   gray100: '#f4f4f5',
   gray200: '#e4e4e7',
