@@ -8,7 +8,7 @@ import { Icon } from 'ui/Icon/Icon';
 
 interface InputProps extends TextInputProps {
     type?: 'password' | 'email' | 'default'
-    label:string
+    label: string
     error?: string
   }
 
@@ -46,6 +46,7 @@ export const Input: React.FC<InputProps> = ({
           style={styles.icon}
           onPress={() => { setHide(!hide); }}
           fillPrimary={activeColor}
+          size={24}
         />
         )}
       </View>
