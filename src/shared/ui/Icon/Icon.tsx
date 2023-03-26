@@ -14,8 +14,9 @@ import EyeOpen from 'assets/icons/view.svg';
 import EyeClosed from 'assets/icons/view_hide.svg';
 import Widget from 'assets/icons/widget.svg';
 
-interface IconProps extends SvgIconProps {
-  name:keyof typeof Icons
+export interface IconProps extends SvgIconProps {
+  name: keyof typeof Icons
+  size?: number
 }
 
 const Icons = {
@@ -33,7 +34,7 @@ const Icons = {
   widget: Widget,
 };
 
-export const Icon = ({ name, ...svgProps }:IconProps) => {
+export const Icon = ({ name, size, ...svgProps }:IconProps) => {
   const IconComponent = Icons[name];
-  return <IconComponent {...svgProps} />;
+  return <IconComponent {...svgProps} width={size} height={size} />;
 };
